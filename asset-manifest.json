@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/kanbanboard-app-react/static/css/main.a30ba85f.chunk.css",
+    "main.js": "/kanbanboard-app-react/static/js/main.68ef7208.chunk.js",
+    "main.js.map": "/kanbanboard-app-react/static/js/main.68ef7208.chunk.js.map",
+    "runtime-main.js": "/kanbanboard-app-react/static/js/runtime-main.15128f43.js",
+    "runtime-main.js.map": "/kanbanboard-app-react/static/js/runtime-main.15128f43.js.map",
+    "static/js/2.31b7ab53.chunk.js": "/kanbanboard-app-react/static/js/2.31b7ab53.chunk.js",
+    "static/js/2.31b7ab53.chunk.js.map": "/kanbanboard-app-react/static/js/2.31b7ab53.chunk.js.map",
+    "static/js/3.fb47e43b.chunk.js": "/kanbanboard-app-react/static/js/3.fb47e43b.chunk.js",
+    "static/js/3.fb47e43b.chunk.js.map": "/kanbanboard-app-react/static/js/3.fb47e43b.chunk.js.map",
+    "index.html": "/kanbanboard-app-react/index.html",
+    "static/css/main.a30ba85f.chunk.css.map": "/kanbanboard-app-react/static/css/main.a30ba85f.chunk.css.map",
+    "static/js/2.31b7ab53.chunk.js.LICENSE.txt": "/kanbanboard-app-react/static/js/2.31b7ab53.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.15128f43.js",
+    "static/js/2.31b7ab53.chunk.js",
+    "static/css/main.a30ba85f.chunk.css",
+    "static/js/main.68ef7208.chunk.js"
+  ]
+}
