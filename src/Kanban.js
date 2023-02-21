@@ -61,7 +61,9 @@ const Kanban = () => {
             const newColumnsState2 = [...newColumnsState];
             setColumns(newColumnsState2);
         } else {
-            openPopup(finish.id);
+            if (finish.id > start.id){
+                openPopup(finish.id);
+            }
             if (finish.taskIds.length < finish.limit) {
                 const startTaskIds = Array.from(start.taskIds);
                 const [item] = startTaskIds.splice(source.index, 1);
@@ -149,7 +151,7 @@ const Kanban = () => {
                 columnData={modal}
               />
             )}
-            {popup && <KanbanPopup closePopup={closePopup} columnData={columns[popup - 1]} />}
+            {popup && popup != 1 && <KanbanPopup closePopup={closePopup} columnData={columns[popup - 1]} />}
             <h1 className="Kanban-title">Kanban</h1>
             <div className="Kanban-columns-container">
               {columns.map((c) => {
