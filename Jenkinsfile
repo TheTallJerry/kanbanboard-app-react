@@ -9,7 +9,7 @@ pipeline{
         stage('Deploy') {
             steps {
                 script {
-                    sh 'npm run deploy'
+                    sh 'npm i && npm run deploy'
                 }
             }
         }
