@@ -54,7 +54,7 @@ const KanbanTask = (props) => {
                                         props.removeTask(props.task.id)
                                     }
                                 >
-                                    Cancel
+                                    Remove
                                 </button>
                             </div>
                         </>
