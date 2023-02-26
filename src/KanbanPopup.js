@@ -1,6 +1,7 @@
 import React from "react";
 import "./KanbanPopup.css";
 import useInputState from "./useInputState";
+import TextField from "@mui/material/TextField";
 
 const KanbanPopup = (props) => {
   const [first, handleChangeFirst] = useInputState("");
@@ -22,44 +23,41 @@ const KanbanPopup = (props) => {
             e.preventDefault();
           }}
         >
-          <div className="KanbanPopup-input-container">
-            <div className="KanbanModel-input-label">
-              <label htmlFor="first">{columnData.first}</label>
-            </div>
-            <input
-              className="KanbanPopup-input"
-              type="text"
-              name="first"
-              id="first"
+          <div className="KanbanModal-input-container">
+            <TextField
+              id="standard-multiline-static"
+              helperText={columnData.first}
+              multiline
+              label="Question 1:"
+              rows={3}
+              defaultValue="Default Value"
               value={first}
               onChange={handleChangeFirst}
-            ></input>
+            />
           </div>
-          <div className="KanbanPopup-input-container">
-            <div className="KanbanModel-input-label">
-              <label htmlFor="second">{columnData.second}</label>
-            </div>
-            <input
-              className="KanbanPopup-input"
-              type="text"
-              name="second"
-              id="second"
+          <div className="KanbanModal-input-container">
+            <TextField
+              id="standard-multiline-static"
+              helperText={columnData.second}
+              multiline
+              label="Question 2:"
+              rows={3}
+              defaultValue="Default Value"
               value={second}
               onChange={handleChangeSecond}
-            ></input>
+            />
           </div>
-          <div className="KanbanPopup-input-container">
-            <div className="KanbanModel-input-label">
-              <label htmlFor="third">{columnData.third}</label>
-            </div>
-            <input
-              className="KanbanPopup-input"
-              type="text"
-              name="third"
-              id="third"
+          <div className="KanbanModal-input-container">
+            <TextField
+              id="standard-multiline-static"
+              helperText={columnData.third}
+              multiline
+              label="Question 3:"
+              rows={3}
+              defaultValue="Default Value"
               value={third}
               onChange={handleChangeThird}
-            ></input>
+            />
           </div>
           <button
             className="KanbanPopup-input-submit-btn"

@@ -148,10 +148,16 @@ const Kanban = () => {
               <KanbanModal
                 closeModal={closeModal}
                 addTask={addTask}
-                columnData={modal}
+                columnData={columns[modal - 1]}
+                modal={modal}
               />
             )}
-            {popup && popup != 1 && <KanbanPopup closePopup={closePopup} columnData={columns[popup - 1]} />}
+            {popup && popup !== 1 && (
+              <KanbanPopup
+                closePopup={closePopup}
+                columnData={columns[popup - 1]}
+              />
+            )}
             <h1 className="Kanban-title">Kanban</h1>
             <div className="Kanban-columns-container">
               {columns.map((c) => {

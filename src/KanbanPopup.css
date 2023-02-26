@@ -9,13 +9,9 @@
 }
 
 .KanbanPopup-content {
-    position: fixed;
     background: white;
     border-radius: 10px;
     width: 15%;
-    min-width: min-content;
-    height: 30%;
-    min-height: min-content;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -24,6 +20,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: auto;
 }
 
 .KanbanPopup-close-btn:before {
@@ -43,7 +40,7 @@
     align-items: center;
     justify-content: center;
     width: 220px;
-    height: 200px;
+    height: fit-content;
 }
 
 .KanbanPopup-input-container {
