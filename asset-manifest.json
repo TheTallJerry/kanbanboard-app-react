@@ -1,15 +1,15 @@
 {
-  "main.css": "/kanbanboard-app-react/static/css/main.9f20d9e1.chunk.css",
-  "main.js": "/kanbanboard-app-react/static/js/main.17157b19.chunk.js",
-  "main.js.map": "/kanbanboard-app-react/static/js/main.17157b19.chunk.js.map",
+  "main.css": "/kanbanboard-app-react/static/css/main.8c8a84d7.chunk.css",
+  "main.js": "/kanbanboard-app-react/static/js/main.7c2fea29.chunk.js",
+  "main.js.map": "/kanbanboard-app-react/static/js/main.7c2fea29.chunk.js.map",
   "static/js/1.dc2f8d4e.chunk.js": "/kanbanboard-app-react/static/js/1.dc2f8d4e.chunk.js",
   "static/js/1.dc2f8d4e.chunk.js.map": "/kanbanboard-app-react/static/js/1.dc2f8d4e.chunk.js.map",
   "static/js/2.3c01b482.chunk.js": "/kanbanboard-app-react/static/js/2.3c01b482.chunk.js",
   "static/js/2.3c01b482.chunk.js.map": "/kanbanboard-app-react/static/js/2.3c01b482.chunk.js.map",
   "runtime~main.js": "/kanbanboard-app-react/static/js/runtime~main.c607db09.js",
   "runtime~main.js.map": "/kanbanboard-app-react/static/js/runtime~main.c607db09.js.map",
-  "static/css/main.9f20d9e1.chunk.css.map": "/kanbanboard-app-react/static/css/main.9f20d9e1.chunk.css.map",
+  "static/css/main.8c8a84d7.chunk.css.map": "/kanbanboard-app-react/static/css/main.8c8a84d7.chunk.css.map",
   "index.html": "/kanbanboard-app-react/index.html",
-  "precache-manifest.a0447d4f34185c612219ff08b0470d2c.js": "/kanbanboard-app-react/precache-manifest.a0447d4f34185c612219ff08b0470d2c.js",
+  "precache-manifest.cb4f1114b42540766536ca5394994e6e.js": "/kanbanboard-app-react/precache-manifest.cb4f1114b42540766536ca5394994e6e.js",
   "service-worker.js": "/kanbanboard-app-react/service-worker.js"
 }
