@@ -1,22 +1,15 @@
 {
-  "files": {
-    "main.css": "/kanbanboard-app-react/static/css/main.a30ba85f.chunk.css",
-    "main.js": "/kanbanboard-app-react/static/js/main.87b9fc9d.chunk.js",
-    "main.js.map": "/kanbanboard-app-react/static/js/main.87b9fc9d.chunk.js.map",
-    "runtime-main.js": "/kanbanboard-app-react/static/js/runtime-main.15128f43.js",
-    "runtime-main.js.map": "/kanbanboard-app-react/static/js/runtime-main.15128f43.js.map",
-    "static/js/2.31b7ab53.chunk.js": "/kanbanboard-app-react/static/js/2.31b7ab53.chunk.js",
-    "static/js/2.31b7ab53.chunk.js.map": "/kanbanboard-app-react/static/js/2.31b7ab53.chunk.js.map",
-    "static/js/3.fb47e43b.chunk.js": "/kanbanboard-app-react/static/js/3.fb47e43b.chunk.js",
-    "static/js/3.fb47e43b.chunk.js.map": "/kanbanboard-app-react/static/js/3.fb47e43b.chunk.js.map",
-    "index.html": "/kanbanboard-app-react/index.html",
-    "static/css/main.a30ba85f.chunk.css.map": "/kanbanboard-app-react/static/css/main.a30ba85f.chunk.css.map",
-    "static/js/2.31b7ab53.chunk.js.LICENSE.txt": "/kanbanboard-app-react/static/js/2.31b7ab53.chunk.js.LICENSE.txt"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.15128f43.js",
-    "static/js/2.31b7ab53.chunk.js",
-    "static/css/main.a30ba85f.chunk.css",
-    "static/js/main.87b9fc9d.chunk.js"
-  ]
+  "main.css": "/kanbanboard-app-react/static/css/main.7852b077.chunk.css",
+  "main.js": "/kanbanboard-app-react/static/js/main.ec0bfc90.chunk.js",
+  "main.js.map": "/kanbanboard-app-react/static/js/main.ec0bfc90.chunk.js.map",
+  "static/js/1.dc2f8d4e.chunk.js": "/kanbanboard-app-react/static/js/1.dc2f8d4e.chunk.js",
+  "static/js/1.dc2f8d4e.chunk.js.map": "/kanbanboard-app-react/static/js/1.dc2f8d4e.chunk.js.map",
+  "static/js/2.3c01b482.chunk.js": "/kanbanboard-app-react/static/js/2.3c01b482.chunk.js",
+  "static/js/2.3c01b482.chunk.js.map": "/kanbanboard-app-react/static/js/2.3c01b482.chunk.js.map",
+  "runtime~main.js": "/kanbanboard-app-react/static/js/runtime~main.c607db09.js",
+  "runtime~main.js.map": "/kanbanboard-app-react/static/js/runtime~main.c607db09.js.map",
+  "static/css/main.7852b077.chunk.css.map": "/kanbanboard-app-react/static/css/main.7852b077.chunk.css.map",
+  "index.html": "/kanbanboard-app-react/index.html",
+  "precache-manifest.340033f7a54ac0a41c307c14051201c5.js": "/kanbanboard-app-react/precache-manifest.340033f7a54ac0a41c307c14051201c5.js",
+  "service-worker.js": "/kanbanboard-app-react/service-worker.js"
 }
