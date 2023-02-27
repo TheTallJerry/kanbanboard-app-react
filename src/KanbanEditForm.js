@@ -1,6 +1,7 @@
 import React from "react";
 import useInputState from "./useInputState";
 import "./KanbanEditForm.css";
+import { Box, TextField } from "@mui/material";
 
 const KanbanEditForm = (props) => {
     const [text, handleChangeText] = useInputState(props.startText);
@@ -13,33 +14,21 @@ const KanbanEditForm = (props) => {
                 props.toggle();
             }}
             className="KanbanEditForm"
-        >
-            <div className="KanbanEditForm-input-container">
-                <label htmlFor="task">Task: </label>
-                <textarea
-                    className="KanbanEditForm-input-textarea"
-                    type="text"
-                    cols="15"
-                    rows="5"
+        >   
+            <Box m={2} pt={3}>
+                <TextField
                     value={text}
                     onChange={handleChangeText}
-                    name="task"
-                    id="task"
-                    required
-                ></textarea>
-            </div>
-            <div className="KanbanEditForm-input-container">
-                <label htmlFor="user">For: </label>
-                <input
-                    className="KanbanEditForm-input"
-                    type="text"
-                    name="user"
-                    id="user"
+                    label="Task"
+                    style={{padding: '10px'}}
+                />
+                <TextField
                     value={user}
                     onChange={handleChangeUser}
-                    required
-                ></input>
-            </div>
+                    label="For:"
+                    style={{padding: '10px'}}
+                />
+            </Box>
             <button
                 className="KanbanEditForm-btn"
                 style={{ backgroundColor: `${props.color}` }}

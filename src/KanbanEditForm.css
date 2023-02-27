@@ -10,11 +10,12 @@
 }
 
 .KanbanEditForm-btn {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     opacity: 0.8;
     padding: 0.2rem 0.4rem;
     border: 1px solid white;
     border-radius: 10px;
     cursor: pointer;
+    color: white;
     margin-top: 5px;
 }

@@ -1,6 +1,6 @@
 .KanbanColumn {
-    width: 12%;
-    max-width: 200px;
+    width: 30%;
+    max-width: 600px;
     text-align: center;
     border-radius: 15px;
     display: flex;
@@ -21,14 +21,14 @@
 
 .KanbanColumn-name {
     color: white;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
     letter-spacing: 0.1rem;
 }
 
 .KanbanColumn-numbers {
     color: white;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
 }
 
 .KanbanColumn-footer {

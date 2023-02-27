@@ -158,7 +158,7 @@ const Kanban = () => {
                 columnData={columns[popup - 1]}
               />
             )}
-            <h1 className="Kanban-title">Kanban</h1>
+            <h1 className="Kanban-title">Stress Management Kanban Board</h1>
             <div className="Kanban-columns-container">
               {columns.map((c) => {
                 return (
