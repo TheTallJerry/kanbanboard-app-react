@@ -99,11 +99,11 @@ const Kanban = () => {
         setModal(false);
         if (newTask.text && newTask.user) {
           const updatedColumns = columns.map((column) => {
-            if (column.id === newTask.idColumn) {
-              column.firstAnswer = newTask.firstAnswer;
-              column.secondAnswer = newTask.secondAnswer;
-              column.thirdAnswer = newTask.thirdAnswer;
-            }
+            // if (column.id === newTask.idColumn) {
+            //   column.firstAnswer = newTask.firstAnswer;
+            //   column.secondAnswer = newTask.secondAnswer;
+            //   column.thirdAnswer = newTask.thirdAnswer;
+            // }
             if (column.id === newTask.idColumn && column.taskIds.length < 5) {
               column.taskIds.push(newTask);
               return column;
