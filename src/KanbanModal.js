@@ -5,19 +5,22 @@ import { v4 as uuidv4 } from "uuid";
 import TextField from "@mui/material/TextField";
 
 const KanbanModal = (props) => {
+  const columnData = props.columnData;
+
   const [task, handleChangeTask] = useInputState("");
   const [user, handleChangeUser] = useInputState("");
-  const [first, handleChangeFirst] = useInputState("");
-  const [second, handleChangeSecond] = useInputState("");
-  const [third, handleChangeThird] = useInputState("");
-
-  const columnData = props.columnData;
+  const [first, handleChangeFirst] = useInputState(columnData.firstAnswer);
+  const [second, handleChangeSecond] = useInputState(columnData.secondAnswer);
+  const [third, handleChangeThird] = useInputState(columnData.thirdAnswer);
 
   const newTask = {
     id: uuidv4(),
     text: task,
     idColumn: props.modal,
     user: user,
+    firstAnswer: first, 
+    secondAnswer: second, 
+    thirdAnswer: third,
   };
 
   return (
@@ -59,7 +62,6 @@ const KanbanModal = (props) => {
               multiline
               label="Question 1:"
               rows={3}
-              defaultValue="Default Value"
               value={first}
               onChange={handleChangeFirst}
             />
@@ -71,7 +73,6 @@ const KanbanModal = (props) => {
               multiline
               label="Question 2:"
               rows={3}
-              defaultValue="Default Value"
               value={second}
               onChange={handleChangeSecond}
             />
@@ -83,12 +84,13 @@ const KanbanModal = (props) => {
               multiline
               label="Question 3:"
               rows={3}
-              defaultValue="Default Value"
               value={third}
               onChange={handleChangeThird}
             />
           </div>
-          <button className="KanbanModal-input-submit-btn">Submit</button>
+          <button className="KanbanModal-input-submit-btn">
+            {!(first || second || third || (user && task)) ? "Close" : "Submit"}
+          </button>
         </form>
       </section>
     </div>

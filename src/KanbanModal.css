@@ -11,7 +11,7 @@
 .KanbanModal-content {
     background: white;
     border-radius: 10px;
-    width: 15%;
+    width: 25%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

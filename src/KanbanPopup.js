@@ -23,38 +23,35 @@ const KanbanPopup = (props) => {
             e.preventDefault();
           }}
         >
-          <div className="KanbanModal-input-container">
+          <div className="KanbanPopup-input-container">
             <TextField
               id="standard-multiline-static"
               helperText={columnData.first}
               multiline
               label="Question 1:"
               rows={3}
-              defaultValue="Default Value"
               value={first}
               onChange={handleChangeFirst}
             />
           </div>
-          <div className="KanbanModal-input-container">
+          <div className="KanbanPopup-input-container">
             <TextField
               id="standard-multiline-static"
               helperText={columnData.second}
               multiline
               label="Question 2:"
               rows={3}
-              defaultValue="Default Value"
               value={second}
               onChange={handleChangeSecond}
             />
           </div>
-          <div className="KanbanModal-input-container">
+          <div className="KanbanPopup-input-container">
             <TextField
               id="standard-multiline-static"
               helperText={columnData.third}
               multiline
               label="Question 3:"
               rows={3}
-              defaultValue="Default Value"
               value={third}
               onChange={handleChangeThird}
             />
@@ -63,7 +60,7 @@ const KanbanPopup = (props) => {
             className="KanbanPopup-input-submit-btn"
             onClick={props.closePopup}
           >
-            Submit
+            {!(first || second || third) ? "Close" : "Submit"}
           </button>
         </form>
       </section>
