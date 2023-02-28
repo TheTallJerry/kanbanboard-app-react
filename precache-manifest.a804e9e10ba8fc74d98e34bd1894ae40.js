@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c509c9d642173081a4f9",
+    "revision": "267354585b1225de5992",
     "url": "/kanbanboard-app-react/static/css/main.401d24be.chunk.css"
   },
   {
-    "revision": "c509c9d642173081a4f9",
-    "url": "/kanbanboard-app-react/static/js/main.c509c9d6.chunk.js"
+    "revision": "267354585b1225de5992",
+    "url": "/kanbanboard-app-react/static/js/main.26735458.chunk.js"
   },
   {
     "revision": "0424cf0647c9e6184f6a",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/kanbanboard-app-react/static/js/runtime~main.03b79869.js"
   },
   {
-    "revision": "df063046f9436c91bf3b07bfb1db2ae9",
+    "revision": "ff983d2b221c8423c08195697fc55252",
     "url": "/kanbanboard-app-react/index.html"
   }
 ];
