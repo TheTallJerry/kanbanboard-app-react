@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/kanbanboard-app-react/precache-manifest.b307e810ed4cd503c5ce5f71cb051af4.js"
+  "/kanbanboard-app-react/precache-manifest.d4984e32339569b67622fdf97fc7d3ae.js"
 );
 
 workbox.clientsClaim();
