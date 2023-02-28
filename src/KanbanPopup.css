@@ -11,7 +11,7 @@
 .KanbanPopup-content {
     background: white;
     border-radius: 10px;
-    width: 15%;
+    width: 20%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -35,11 +35,12 @@
 }
 
 .KanbanPopup-form {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 220px;
+    width: 100%;
+    margin: 20px;
+    padding-top: 20px;
     height: fit-content;
 }
 
@@ -51,12 +52,19 @@
     width: 200px;
 }
 
+.KanbanPopup-footer {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
 .KanbanPopup-input-submit-btn {
     background-color: lightsteelblue;
     opacity: 0.8;
     width: 100px;
     padding: 0.3rem;
     border: 1px solid white;
+    font-size: medium;
     border-radius: 10px;
     cursor: pointer;
     justify-self: center;

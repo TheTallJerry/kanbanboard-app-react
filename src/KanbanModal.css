@@ -11,8 +11,8 @@
 .KanbanModal-content {
     background: white;
     border-radius: 10px;
-    width: 35%;
-    height: 700px;
+    width: max-content;
+    height: max-content;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -36,11 +36,12 @@
 }
 
 .KanbanModal-form {
-    display: flex;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 480px;
     height: fit-content;
 }
 
@@ -52,12 +53,19 @@
     width: 200px;
 }
 
+.KanbanModal-footer {
+    display: flex;
+    padding-bottom: 40px;
+    justify-content: center;
+}
+
 .KanbanModal-input-submit-btn {
     background-color: lightsteelblue;
     opacity: 0.8;
-    width: 100px;
+    width: 20%;
     padding: 0.3rem;
     border: 1px solid white;
+    font-size: medium;
     border-radius: 10px;
     cursor: pointer;
     justify-self: center;

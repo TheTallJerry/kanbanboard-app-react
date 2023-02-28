@@ -20,13 +20,13 @@ const KanbanEditForm = (props) => {
                     value={text}
                     onChange={handleChangeText}
                     label="Task"
-                    style={{padding: '10px'}}
+                    style={{padding: '10px', width: '100%'}}
                 />
                 <TextField
                     value={user}
                     onChange={handleChangeUser}
                     label="For:"
-                    style={{padding: '10px'}}
+                    style={{padding: '10px', width: '100%'}}
                 />
             </Box>
             <button

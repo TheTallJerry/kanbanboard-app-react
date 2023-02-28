@@ -14,10 +14,11 @@ const KanbanTask = (props) => {
         <Draggable draggableId={`${props.task.id}`} index={props.index}>
             {(provided) => (
                 <Card
-                    className="KanbanTask"
+                    // className="KanbanTask"
                     {...provided.draggableProps}
                     {...provided.dragHandleProps}
                     ref={provided.innerRef}
+                    sx={{ margin: '10px' }}
                 >
                     {isEditing ? (
                         <KanbanEditForm
@@ -32,7 +33,7 @@ const KanbanTask = (props) => {
                         <>
                             <CardHeader title={ props.task.user }/>
                             <CardContent>
-                                <Typography variant="body2" color="text.primary">
+                                <Typography variant="h6" color="text.primary">
                                 {props.task.text}
                                 </Typography>
                             </CardContent>
