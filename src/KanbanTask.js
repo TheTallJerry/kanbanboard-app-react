@@ -3,6 +3,9 @@ import "./KanbanTask.css";
 import { Draggable } from "react-beautiful-dnd";
 import useToggle from "./useToggleState";
 import KanbanEditForm from "./KanbanEditForm";
+import { Button, Card, CardHeader, CardContent, Typography, CardActions, IconButton } from "@mui/material";
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 const KanbanTask = (props) => {
     const [isEditing, toggle] = useToggle(false);
@@ -10,7 +13,7 @@ const KanbanTask = (props) => {
     return (
         <Draggable draggableId={`${props.task.id}`} index={props.index}>
             {(provided) => (
-                <div
+                <Card
                     className="KanbanTask"
                     {...provided.draggableProps}
                     {...provided.dragHandleProps}
@@ -27,39 +30,23 @@ const KanbanTask = (props) => {
                         />
                     ) : (
                         <>
-                            <div className="KanbanTask-assigned">
-                                <span className="KanbanTask-assigned-img">
-                                    {props.task.user}
-                                </span>
-                            </div>
-                            <div className="KanbanTask-content">
+                            <CardHeader title={ props.task.user }/>
+                            <CardContent>
+                                <Typography variant="body2" color="text.primary">
                                 {props.task.text}
-                            </div>
-                            <div className="KanbanTask-options">
-                                <button
-                                    className="KanbanTask-btn-edit"
-                                    style={{
-                                        backgroundColor: `${props.color}`,
-                                    }}
-                                    onClick={toggle}
-                                >
-                                    Edit
-                                </button>
-                                <button
-                                    className="KanbanTask-btn-delete"
-                                    style={{
-                                        backgroundColor: `${props.color}`,
-                                    }}
-                                    onClick={() =>
-                                        props.removeTask(props.task.id)
-                                    }
-                                >
-                                    Remove
-                                </button>
-                            </div>
+                                </Typography>
+                            </CardContent>
+                            <CardActions disableSpacing>
+                                <IconButton aria-label="Edit Task" onClick={toggle}>
+                                    <EditIcon />
+                                </IconButton>
+                                <IconButton aria-label="Delete Task" onClick={() => props.removeTask(props.task.id)}>
+                                    <DeleteIcon />
+                                </IconButton>
+                            </CardActions>
                         </>
                     )}
-                </div>
+                </Card>
             )}
         </Draggable>
     );

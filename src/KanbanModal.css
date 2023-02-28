@@ -11,7 +11,8 @@
 .KanbanModal-content {
     background: white;
     border-radius: 10px;
-    width: 15%;
+    width: 35%;
+    height: 700px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -39,7 +40,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 220px;
+    width: 480px;
     height: fit-content;
 }
 

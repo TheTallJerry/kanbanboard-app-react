@@ -34,22 +34,24 @@ const KanbanModal = (props) => {
             props.addTask(newTask);
           }}
         >
-          <div className="KanbanModal-input-container">
+          <div style={{display: 'flex'}}>
             <TextField
               id="filled-search"
               label="Task:"
               type="search"
               value={task}
+              variant="standard"
               onChange={handleChangeTask}
+              style={{padding: 6}}
             />
-          </div>
-          <div className="KanbanModal-input-container">
             <TextField
               id="filled-search"
               label="For:"
               type="search"
               value={user}
+              variant="standard"
               onChange={handleChangeUser}
+              style={{padding: 6}}
             />
           </div>
           <div className="KanbanModal-input-container">
