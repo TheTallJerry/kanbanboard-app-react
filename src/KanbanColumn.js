@@ -16,7 +16,7 @@ const KanbanColumn = (props) => {
                     {props.columnData.taskIds.length} / {props.columnData.limit}
                     ;
                 </p>
-                <div style={{ maxHeight: 800, overflow: 'auto' }}>
+                <div style={{ height: 800, overflow: 'auto' }}>
                     <Droppable droppableId={`${props.columnData.id - 1}`}>
                         {(provided) => (
                             <div
