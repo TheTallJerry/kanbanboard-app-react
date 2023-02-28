@@ -40,6 +40,7 @@ const KanbanModal = (props) => {
               label="Task:"
               type="search"
               value={task}
+              fullWidth
               variant="standard"
               onChange={handleChangeTask}
               style={{padding: 6}}
@@ -50,6 +51,7 @@ const KanbanModal = (props) => {
               type="search"
               value={user}
               variant="standard"
+              fullWidth
               onChange={handleChangeUser}
               style={{padding: 6}}
             />
@@ -61,6 +63,7 @@ const KanbanModal = (props) => {
               multiline
               label="Question 1:"
               rows={3}
+              fullWidth
               defaultValue="Default Value"
               value={first}
               onChange={handleChangeFirst}
@@ -73,6 +76,7 @@ const KanbanModal = (props) => {
               multiline
               label="Question 2:"
               rows={3}
+              fullWidth
               defaultValue="Default Value"
               value={second}
               onChange={handleChangeSecond}
@@ -85,12 +89,15 @@ const KanbanModal = (props) => {
               multiline
               label="Question 3:"
               rows={3}
+              fullWidth
               defaultValue="Default Value"
               value={third}
               onChange={handleChangeThird}
             />
           </div>
-          <button className="KanbanModal-input-submit-btn">Submit</button>
+          <div className="KanbanModal-footer">
+            <button className="KanbanModal-input-submit-btn">Submit</button>
+          </div>
         </form>
       </section>
     </div>

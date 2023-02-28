@@ -16,7 +16,6 @@ const KanbanColumn = (props) => {
                     {props.columnData.taskIds.length} / {props.columnData.limit}
                     ;
                 </p>
-                <div style={{ height: 800, overflow: 'auto' }}>
                     <Droppable droppableId={`${props.columnData.id - 1}`}>
                         {(provided) => (
                             <div
@@ -41,7 +40,6 @@ const KanbanColumn = (props) => {
                             </div>
                         )}
                     </Droppable>
-                </div>
             </div>
             {props.columnData.id === 1 && <Button variant="contained" onClick={() => props.openModal(props.columnData)}
                 disabled={

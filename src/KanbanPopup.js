@@ -32,6 +32,7 @@ const KanbanPopup = (props) => {
               rows={3}
               defaultValue="Default Value"
               value={first}
+              fullWidth
               onChange={handleChangeFirst}
             />
           </div>
@@ -44,6 +45,7 @@ const KanbanPopup = (props) => {
               rows={3}
               defaultValue="Default Value"
               value={second}
+              fullWidth
               onChange={handleChangeSecond}
             />
           </div>
@@ -56,15 +58,18 @@ const KanbanPopup = (props) => {
               rows={3}
               defaultValue="Default Value"
               value={third}
+              fullWidth
               onChange={handleChangeThird}
             />
           </div>
-          <button
-            className="KanbanPopup-input-submit-btn"
-            onClick={props.closePopup}
-          >
-            Submit
-          </button>
+          <div className="KanbanPopup-footer">
+            <button
+              className="KanbanPopup-input-submit-btn"
+              onClick={props.closePopup}
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </section>
     </div>
