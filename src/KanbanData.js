@@ -11,15 +11,15 @@ export const columnsRawData = [
     taskIds: [
       {
         id: uuidv4(),
-        text: "Status component",
+        text: "Nap",
         idColumn: 1,
-        user: "CSC428",
+        user: "CSC428 A1",
       },
       {
         id: uuidv4(),
-        text: "New slides for presentation",
+        text: "More nap",
         idColumn: 1,
-        user: "CSC428",
+        user: "CSC428 A1",
       },
     ],
     first:
@@ -34,7 +34,7 @@ export const columnsRawData = [
     limit: taskLimitNumber,
     color: "#5A9DF9",
     taskIds: [
-      { id: uuidv4(), text: "Take a 5min break", idColumn: 2, user: "Mental Health" },
+      { id: uuidv4(), text: "Gaming", idColumn: 2, user: "CSC369 A1" },
     ],
     first:
       "How are you feeling at this very moment, right before starting this activity? What's on your mind?",
@@ -48,8 +48,7 @@ export const columnsRawData = [
     limit: taskLimitNumber,
     color: "#1387BE",
     taskIds: [
-      { id: uuidv4(), text: "Change css img", idColumn: 3, user: "CSC428" },
-      { id: uuidv4(), text: "Meeting", idColumn: 3, user: "CSC428" },
+      { id: uuidv4(), text: "Jogging", idColumn: 3, user: "CSC108 A1" },
     ],
     first:
       "Re-type the summary of the situation in the following format: Trigger: Thought: Feeling: Behaviour",
